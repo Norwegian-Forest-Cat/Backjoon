@@ -1,6 +1,6 @@
 # 단어 공부
 
-arr = input().lower()
+arr = input().upper()
 bucket = [0] * 150
 
 # 문자 아스키코드 저장
@@ -12,7 +12,7 @@ count1, count2, maxV = 0, 0, ''
 for cnt in range(len(bucket)):
     if bucket[cnt] > count1:
         count1 = bucket[cnt]
-        maxV = chr(cnt).upper()
+        maxV = chr(cnt)
     elif bucket[cnt] == count1:
         count2 = bucket[cnt]
 
